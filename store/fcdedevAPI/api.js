@@ -30,6 +30,24 @@ function api_v1_rohit_destroy(payload) {
 function api_v1_signup_create(payload) {
   return fcdedevAPI.post(`/api/v1/signup/`, payload)
 }
+function api_v1_vgdhf_list(payload) {
+  return fcdedevAPI.get(`/api/v1/vgdhf/`)
+}
+function api_v1_vgdhf_create(payload) {
+  return fcdedevAPI.post(`/api/v1/vgdhf/`, payload)
+}
+function api_v1_vgdhf_retrieve(payload) {
+  return fcdedevAPI.get(`/api/v1/vgdhf/${payload.id}/`)
+}
+function api_v1_vgdhf_update(payload) {
+  return fcdedevAPI.put(`/api/v1/vgdhf/${payload.id}/`, payload)
+}
+function api_v1_vgdhf_partial_update(payload) {
+  return fcdedevAPI.patch(`/api/v1/vgdhf/${payload.id}/`, payload)
+}
+function api_v1_vgdhf_destroy(payload) {
+  return fcdedevAPI.delete(`/api/v1/vgdhf/${payload.id}/`)
+}
 function rest_auth_login_create(payload) {
   return fcdedevAPI.post(`/rest-auth/login/`, payload)
 }
@@ -73,6 +91,12 @@ export const apiService = {
   api_v1_rohit_partial_update,
   api_v1_rohit_destroy,
   api_v1_signup_create,
+  api_v1_vgdhf_list,
+  api_v1_vgdhf_create,
+  api_v1_vgdhf_retrieve,
+  api_v1_vgdhf_update,
+  api_v1_vgdhf_partial_update,
+  api_v1_vgdhf_destroy,
   rest_auth_login_create,
   rest_auth_logout_retrieve,
   rest_auth_logout_create,
