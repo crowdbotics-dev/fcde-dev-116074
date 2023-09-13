@@ -1,6 +1,6 @@
 from rest_framework import viewsets
-from home.models import Rohit,Rohit,Rohit
-from .serializers import RohitSerializer,RohitSerializer,RohitSerializer
+from home.models import Rohit,Vgdhf,Rohit,Vgdhf,Rohit,Vgdhf
+from .serializers import RohitSerializer,VgdhfSerializer,RohitSerializer,VgdhfSerializer,RohitSerializer,VgdhfSerializer
 from rest_framework import authentication
 from rest_framework.authtoken.serializers import AuthTokenSerializer
 from rest_framework.viewsets import ModelViewSet, ViewSet
@@ -37,3 +37,8 @@ class RohitViewSet(viewsets.ModelViewSet):
     serializer_class = RohitSerializer
     authentication_classes = (authentication.SessionAuthentication, authentication.TokenAuthentication)
     queryset = Rohit.objects.all()
+
+class VgdhfViewSet(viewsets.ModelViewSet):
+    serializer_class = VgdhfSerializer
+    authentication_classes = (authentication.SessionAuthentication, authentication.TokenAuthentication)
+    queryset = Vgdhf.objects.all()
