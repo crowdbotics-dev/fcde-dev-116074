@@ -6,6 +6,24 @@ const fcdedevAPI = axios.create({
 function api_docs_schema_retrieve(payload) {
   return fcdedevAPI.get(`/api-docs/schema/`, { params: { lang: payload.lang } })
 }
+function api_v1_cvbcnfjfjfjgjhgj_list(payload) {
+  return fcdedevAPI.get(`/api/v1/cvbcnfjfjfjgjhgj/`)
+}
+function api_v1_cvbcnfjfjfjgjhgj_create(payload) {
+  return fcdedevAPI.post(`/api/v1/cvbcnfjfjfjgjhgj/`, payload)
+}
+function api_v1_cvbcnfjfjfjgjhgj_retrieve(payload) {
+  return fcdedevAPI.get(`/api/v1/cvbcnfjfjfjgjhgj/${payload.id}/`)
+}
+function api_v1_cvbcnfjfjfjgjhgj_update(payload) {
+  return fcdedevAPI.put(`/api/v1/cvbcnfjfjfjgjhgj/${payload.id}/`, payload)
+}
+function api_v1_cvbcnfjfjfjgjhgj_partial_update(payload) {
+  return fcdedevAPI.patch(`/api/v1/cvbcnfjfjfjgjhgj/${payload.id}/`, payload)
+}
+function api_v1_cvbcnfjfjfjgjhgj_destroy(payload) {
+  return fcdedevAPI.delete(`/api/v1/cvbcnfjfjfjgjhgj/${payload.id}/`)
+}
 function api_v1_login_create(payload) {
   return fcdedevAPI.post(`/api/v1/login/`, payload)
 }
@@ -83,6 +101,12 @@ function rest_auth_user_partial_update(payload) {
 }
 export const apiService = {
   api_docs_schema_retrieve,
+  api_v1_cvbcnfjfjfjgjhgj_list,
+  api_v1_cvbcnfjfjfjgjhgj_create,
+  api_v1_cvbcnfjfjfjgjhgj_retrieve,
+  api_v1_cvbcnfjfjfjgjhgj_update,
+  api_v1_cvbcnfjfjfjgjhgj_partial_update,
+  api_v1_cvbcnfjfjfjgjhgj_destroy,
   api_v1_login_create,
   api_v1_rohit_list,
   api_v1_rohit_create,
