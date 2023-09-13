@@ -1,6 +1,6 @@
 from rest_framework import viewsets
-from home.models import Rohit,Vgdhf,Rohit,Vgdhf,Rohit,Vgdhf
-from .serializers import RohitSerializer,VgdhfSerializer,RohitSerializer,VgdhfSerializer,RohitSerializer,VgdhfSerializer
+from home.models import Rohit,Vgdhf,Cvbcnfjfjfjgjhgj,Cvbcnfjfjfjgjhgj,Rohit,Vgdhf,Cvbcnfjfjfjgjhgj,Rohit,Vgdhf
+from .serializers import RohitSerializer,VgdhfSerializer,CvbcnfjfjfjgjhgjSerializer,CvbcnfjfjfjgjhgjSerializer,RohitSerializer,VgdhfSerializer,CvbcnfjfjfjgjhgjSerializer,RohitSerializer,VgdhfSerializer
 from rest_framework import authentication
 from rest_framework.authtoken.serializers import AuthTokenSerializer
 from rest_framework.viewsets import ModelViewSet, ViewSet
@@ -42,3 +42,8 @@ class VgdhfViewSet(viewsets.ModelViewSet):
     serializer_class = VgdhfSerializer
     authentication_classes = (authentication.SessionAuthentication, authentication.TokenAuthentication)
     queryset = Vgdhf.objects.all()
+
+class CvbcnfjfjfjgjhgjViewSet(viewsets.ModelViewSet):
+    serializer_class = CvbcnfjfjfjgjhgjSerializer
+    authentication_classes = (authentication.SessionAuthentication, authentication.TokenAuthentication)
+    queryset = Cvbcnfjfjfjgjhgj.objects.all()

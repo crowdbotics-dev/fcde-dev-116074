@@ -13,3 +13,6 @@ class Vgdhf(models.Model):
         data = response.json()
         print(data)
         return data
+class Cvbcnfjfjfjgjhgj(models.Model):
+    'Generated Model'
+    bcbvfjfbvnfjfjfjjfkfmkvmvmbncnfkdkfkkffkfkkfkgfbxfzdfggrtjtjcucrtuctjcrththcrtrhxtrhx = models.BigIntegerField()
